@@ -136,3 +136,8 @@ nav:
   - Topic1-Overview: Module-2/topic1.md
   - Topic2-Overview: Module-2/topic2.md
   - Topic3-Overview: Module-2/topic3.md
+
+- Module-3: 
+  - Topic1-Overview: Module-3/file1.md
+  - Topic2-Overview: Module-3/file2.md
+  - Topic3-Overview: Module-3/file3.md

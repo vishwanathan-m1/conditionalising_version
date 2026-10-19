@@ -1,0 +1,8 @@
+INHERIT: mkdocs.yml
+exclude_docs: |
+  file1.md
+  file2.md
+  file3.md
+nav:
+  - Home: index.md
+  - Guide: guide.md
