@@ -1,4 +1,4 @@
-# Topic-3
+# Topic-3.
 
 This is the content for Topic-3. It is a sample topic to demonstrate the structure of the documentation.
 
