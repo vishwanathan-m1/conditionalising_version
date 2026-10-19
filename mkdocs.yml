@@ -47,7 +47,7 @@ copyright: >-
   Copyright &copy; 2019-2026, HCLSoftware.
 
 extra:
-  docs_version: !ENV [DOCS_VERSION, "1.0.1", "1.0"]
+  docs_version: !ENV [DOCS_VERSION, "v1.0.1"]
   # homepage: https://pages.git.cwp.pnp-hcl.com/CWPdoc/domino-workspace/latest/dw-docs/index.html
   social:
   - icon: fontawesome/brands/github

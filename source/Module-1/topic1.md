@@ -4,6 +4,10 @@ This is the content for Topic-1. It is a sample topic to demonstrate the structu
 
 
 
-{% if extra.docs_version == "1.0.1" %}
+{% if extra.docs_version == "v1.0.1" %}
 This feature is only in 1.0.1.
+{% endif %}
+
+{% if extra.docs_version == "v1.0" %}
+This feature is only in 1.0.
 {% endif %}
