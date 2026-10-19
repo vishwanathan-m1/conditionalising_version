@@ -47,7 +47,8 @@ copyright: >-
   Copyright &copy; 2019-2026, HCLSoftware.
 
 extra:
-  docs_version: !ENV [DOCS_VERSION, "v1.0.1"]
+  docs_version: v1.0.1
+  # docs_version: !ENV [DOCS_VERSION, "v1.0.1"]
   # homepage: https://pages.git.cwp.pnp-hcl.com/CWPdoc/domino-workspace/latest/dw-docs/index.html
   social:
   - icon: fontawesome/brands/github
@@ -138,6 +139,6 @@ nav:
   - Topic3-Overview: Module-2/topic3.md
 
 - Module-3: 
-  - Topic1-Overview: Module-3/file1.md
-  - Topic2-Overview: Module-3/file2.md
-  - Topic3-Overview: Module-3/file3.md
+  - File1-Overview: Module-3/file1.md
+  - File2-Overview: Module-3/file2.md
+  - File3-Overview: Module-3/file3.md
