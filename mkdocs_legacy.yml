@@ -4,5 +4,14 @@ exclude_docs: |
   file2.md
   file3.md
 nav:
-  - Home: index.md
-  - Guide: guide.md
+- Home: index.md
+
+- Module-1: 
+  - Topic1-Overview: Module-1/topic1.md
+  - Topic2-Overview: Module-1/topic2.md
+
+- Module-2: 
+  - Topic1-Overview: Module-2/topic1.md
+  - Topic2-Overview: Module-2/topic2.md
+  - Topic3-Overview: Module-2/topic3.md
+  
