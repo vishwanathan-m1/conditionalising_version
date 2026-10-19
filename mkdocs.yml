@@ -1,0 +1,137 @@
+site_name: Conditionalising Versioned Documentation
+site_description: >
+  Conditionalising Versioned Documentation
+# site_url: https://opensource.hcltechsw.com/DW-doc/latest/
+site_url: http://127.0.0.1:8000/cv-doc/latest/
+use_directory_urls: false
+docs_dir: source
+# site_dir: docs
+
+
+theme:
+  name: material
+  features:
+  - content.code.select
+  # - navigation.tabs
+  - navigation.indexes
+  - navigation.sections
+  - navigation.top
+  - navigation.instant
+  - search.highlight
+  - search.share
+  - search.suggest
+  # - navigation.prune
+  # custom_dir: theme_overrides
+  icon:
+    repo: fontawesome/brands/github
+    logo: fontawesome/regular/home    
+  font:
+    text: Roboto
+    code: Roboto Mono
+  static_templates:
+  - 404.html
+markdown_extensions:
+- admonition
+- pymdownx.details
+- pymdownx.superfences
+- md_in_html
+- toc:
+    title: On this page
+- attr_list
+- pymdownx.emoji:
+    emoji_index: !!python/name:material.extensions.emoji.twemoji
+    emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Copyright
+copyright: >-
+  Copyright &copy; 2019-2026, HCLSoftware.
+
+extra:
+  docs_version: !ENV [DOCS_VERSION, "1.0.1", "1.0"]
+  # homepage: https://pages.git.cwp.pnp-hcl.com/CWPdoc/domino-workspace/latest/dw-docs/index.html
+  social:
+  - icon: fontawesome/brands/github
+    link: https://github.com/HCL-TECH-SOFTWARE
+  version:
+    provider: mike
+    # alias: true   
+
+  # isLeap: false
+  # isDominoLeap: false
+  # isDWLeap: true
+  # isDominoWorkspace: true
+  # isVerse: false
+  # isSametime: false
+
+  # fullDominoWorkspaceProductName: HCL Domino Workspace
+  # shortDominoWorkspaceProductName: Domino Workspace
+  # fullVerseProductName: HCL Domino Workspace Mail
+  # shortVerseProductName: Mail
+  # shortLeapProductName: Forms
+  # fullLeapProductName: HCL Domino Workspace Forms
+  # fullSametimeProductName: HCL Domino Workspace Chat and Meetings
+  # shortSametimeProductName: Domino Workspace Chat and Meetings
+  # shortSametimeChatName: Domino Workspace Chat
+  # shortlowercasechatname: Domino Workspace chat
+  # shortSametimeMeetingsName: Domino Workspace Meetings
+  # shortlowercasemeetingname: Domino Workspace meeting
+
+
+  # oldLeapDocsUrl: https://help.hcl-software.com/Leap/9.3.4/index.html
+  # oldLeapDocsVersionStr: Leap 9.3.4
+  # deployUrl: in_overview.md
+  # currentLeapVersion: 9.3.13
+  # currentLeapVersionWBuild: 9.3.13.41
+  # msEntraName: Microsoft Entra ID
+  # leap_flavor: leap
+  # context: apps
+  # apiContext: apps-basic
+
+# hooks:
+#   - hooks/inject_review_hook.py
+
+# repo_url: https://git.cwp.pnp-hcl.com/CWPdoc/domino-workspace
+# repo_name: hcl-software/domino-workspace
+# edit_uri: edit/main/docs
+# extra_css:
+# - dw-docs/assets/stylesheets/style.css
+# - leap-docs/assets/stylesheets/style.css
+# - cam-docs/stylesheets/style.css
+# - verse-docs/assets/stylesheets/style.css
+# - huddo-boards-docs/assets/stylesheets/style.css
+# - collabora-docs/assets/stylesheets/style.css
+# - ontime-docs/assets/stylesheets/style.css
+
+# extra_javascript:
+# - javascripts/extra.js
+# - javascripts/current.js
+
+plugins:
+  # - awesome-pages
+  # - tags
+  - search
+#  - meta-descriptions
+  - minify:
+      minify_html: true      
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+          remove_comments: true
+      cache_safe: true
+  - include-markdown
+  - macros
+  - section-index
+  - mike:
+      canonical_version: latest
+      alias_type: redirect
+
+nav:
+- Home: index.md
+
+- Module-1: 
+  - Topic1-Overview: Module-1/topic1.md
+  - Topic2-Overview: Module-1/topic2.md
+
+- Module-2: 
+  - Topic1-Overview: Module-2/topic1.md
+  - Topic2-Overview: Module-2/topic2.md
