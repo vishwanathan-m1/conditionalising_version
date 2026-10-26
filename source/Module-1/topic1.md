@@ -9,5 +9,5 @@ This feature is only in 1.0.1.
 {% endif %}
 
 {% if extra.docs_version == "v1.0" %}
-This feature is only in 1.0.
+This feature is only in 1.0. -- demo1.0
 {% endif %}
