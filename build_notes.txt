@@ -1,0 +1,8 @@
+old version:
+mkdocs serve -f mkdocs_legacy.yml
+mike deploy --push -F mkdocs_legacy.yml 1.0 -t 1.0
+
+
+new version:
+mkdocs serve
+mike deploy --push --update-aliases 1.0.1 latest -t 1.0.1
